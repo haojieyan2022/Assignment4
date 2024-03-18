@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--Set the charset set and viewport-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page titles and links to external style sheets-->
+    <title>Welcome to the GIC Student Progress Data Collection Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!--The page header, which contains the site title and navigation menu-->
+    <header>
+        <h1>GIC student progress data collection</h1>
+        <!--navigation menu-->
+        <nav>
+            <ul>
+                <!--navigation link-->
+                <li><a href="{{ url_for('welcome') }}">welcome</a></li>
+                <li><a href="{{ url_for('information')}}">information</a></li>
+                <li><a href="{{ url_for('data_collection')}}">data_collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Page content area, welcome message-->
+    <section class="welcome">
+        <h2>Welcome to the GIC Student Progress Data Collection Platform!</h2>
+        <!--Paragraph text-->
+        <p>Our website is designed to provide a platform for our students to assess their academic progress and personal development. Through this platform, we are committed to collecting and analysing data on students' progress across different disciplines and areas to better understand their learning needs and provide personalised support and guidance.</p>
+        <p>On this website, you can expect the following:</p>
+        <!--list-->
+        <ul>
+            <!--list item-->
+            <li>Personalised data collection: Through our online questionnaire, you can provide data on your learning progress, including information on academic performance, learning methods and personal development goals.</li>
+            <li>Real-time feedback: Once you submit your questionnaire, we will immediately provide you with personalized feedback and recommendations to help you better plan your learning and development path.</li>
+            <li>Learning Resource Referrals: Based on the data you provide, we will recommend relevant learning resources and support services to help you better achieve your academic and personal development goals.</li>
+            <li>Data visualization: We will use data visualization technology to show you your learning progress and development trends, to help you more intuitively understand your learning status.</li>
+        </ul>
+        <p>Whether you are a new student or a senior student, we welcome you to join us to explore and enhance your learning journey together! Whether you are a new student or a senior student, we welcome you to join us to explore and enhance your learning journey together!</p>
+    </section>
+</body>
+</html>

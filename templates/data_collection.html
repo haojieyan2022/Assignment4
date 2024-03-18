@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--Set the charset set and viewport-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page titles and links to external style sheets-->
+    <title>Collect information about GIC student progress data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        // JavaScript function to hide success message after 1 second
+        window.onload = function() {
+            var successMessage = document.querySelector('.success-message');
+            if (successMessage) {
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 1000); // Hide message after 1 second (1000 milliseconds)
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <!--Website title and navigation menu-->
+        <h1>GIC student progress data collection</h1>
+        <nav>
+            <ul>
+                <!-- navigation link -->
+                <li><a href="{{ url_for('welcome') }}">welcome</a></li>
+                <li><a href="{{ url_for('information')}}">information</a></li>
+                <li><a href="{{ url_for('data_collection')}}">data_collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="data-collection">
+        <!--Data collection form-->
+        <h2>Student progress data collection</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.name.label }} {{ form.name }}
+            {{ form.student_number.label }} {{ form.student_number }}
+            {{ form.email.label }} {{ form.email }}
+            {{ form.grades.label }} {{ form.grades }}
+            {{ form.satisfaction.label }} {{ form.satisfaction }}
+            {{ form.improvements.label }} {{ form.improvements }}
+            <input type="submit" value="Submit">
+        </form>
+        {% if success %}
+        <div class="success-message">
+            Data submitted successfully!
+        </div>
+        {% endif %}
+    </section>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+/* General formal */
+body {
+    font-family: Arial, sans-serif; /* Use Arial fonts */
+    margin: 0; /* Remove page margins */
+    padding: 0; /* Remove page padding*/
+    background-image: url('background.jpg'); /* Set the background */
+    background-size: cover; /* The background image covers the entire page */
+    background-position: top center; /*The background image is center top*/
+    color: #fff; /*Set the text color to white*/
+}
+
+header, footer {
+    background-color: #333; /*Set the head and bottom background colors*/
+    color: #fff; /*Set the text color to white*/
+    padding: 10px 0; /*The upper and lower inner margins are 10 pixels, and the left and right edges are 0*/
+    text-align: center; /*Center the text*/
+}
+
+header h1 {
+    margin: 0; /*Remove the margin of the title*/
+}
+
+nav ul {
+    list-style-type: none; /*Unlist style*/
+    padding: 0; /*Remove the padding*/
+}
+
+nav ul li {
+    display: inline; /*Set list items to inline display*/
+    margin-right: 20px; /*Margin right is 20 pixels*/
+}
+
+section {
+    padding: 20px; /* Set the inner margin of the content area to 20 pixels */
+}
+
+form {
+    max-width: 500px; /*Set the maximum width of the form to 500 pixels*/
+    margin: 0 auto; /*Displays the form in the center*/
+}
+
+label, input, select, textarea, button {
+    display: block; /*Displays form elements as block-level elements*/
+    margin-bottom: 10px; /*The bottom margin is 10 pixels*/
+}
+
+button {
+    padding: 10px; /*Set the inside margin of the button*/
+    background-color: #333; /*Set the button background*/
+    color: #fff; /*Set the text color to white*/
+    border: none; /*Remove button border*/
+    cursor: pointer; /*The mouse hover style is hand*/
+}
+
+button:hover {
+    background-color: #555; /*The button background color darkens when the mouse hovers*/
+}
+
+a {
+    color: #fff; /*Set the hyperlink color to white*/
+}
+
+a:hover {
+    color: #ccc; /*Set the color to light gray when hovering over the hyperlink*/
+}
+
+/*  Welcome page style*/
+.welcome {
+    background-color: rgba(0, 0, 0, 0.7); /*Set the welcome area background color and transparency*/
+    border-radius: 10px; /*Set the border corners*/
+    padding: 20px; /*The padding is 20 pixels*/
+    margin: 20px auto; /*Center display and set margins*/
+    max-width: 800px; /*The maximum width is 800 pixels*/
+}
+
+.welcome h2 {
+    font-size: 24px; /*Set the title font size*/
+}
+
+.welcome p, .welcome ul, .welcome li {
+    font-size: 16px; /*Set paragraph and list font sizes*/
+    line-height: 1.6; /*Set the line-height*/
+}
+
+/*Data-collection page style*/
+.data-collection {
+    background-color: rgba(0, 0, 0, 0.7); /*Set the background color and transparency of the data collection area*/
+    border-radius: 10px; /*Set the border corners*/
+    padding: 20px; /*The padding is 20 pixels*/
+    margin: 20px auto; /*Center display and set margins*/
+    max-width: 800px; /*The maximum width is 800 pixels*/
+}
+
+.data-collection h2 {
+    font-size: 24px; /*Set the title font size*/
+}
+
+.input-field {
+    background-color: #fff; /* Sets the background color of the input field*/
+}

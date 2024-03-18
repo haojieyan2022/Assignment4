@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--Set the charset set and viewport-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page titles and links to external style sheets-->
+    <title>Collect information about GIC student progress data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!--The page header, which contains the site title and navigation menu-->
+    <header>
+        <h1>GIC student progress data collectionGIC student progress data collection</h1>
+        <!--navigation menu-->
+        <nav>
+            <ul>
+                <!--navigation link-->
+                <li><a href="{{ url_for('welcome') }}">welcome</a></li>
+                <li><a href="{{ url_for('information')}}">information</a></li>
+                <li><a href="{{ url_for('data_collection')}}">data_collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Page content area, about the reasons for the collection of student progress data-->
+    <section class="welcome">
+        <h2>Reasons for collecting student progress data at GIC</h2>
+        <p>There are many reasons for collecting student progress data at GIC, including the following:</p>
+        <ul>
+            <!--List the reasons for collecting student progress data-->
+            <li>Personalized support and guidance: By collecting data on students' academic progress, the College is able to better understand each student's learning needs and challenges. In this way, the College can provide each student with more personalized support and guidance to help them overcome learning disabilities and achieve better academic results.</li>
+            <li>Improving teaching methods: The collection of student progress data also helps the college evaluate the effectiveness of teaching methods. By analyzing students' academic performance and feedback, the college can understand which teaching methods are most effective and which need to be adjusted or improved to improve the quality of teaching.</li>
+            <li>Providing student feedback and advice: By collecting data on student progress, the College can provide timely feedback and advice to students to help them better understand their learning status and performance. This personalized feedback can motivate students to continue their efforts and provide practical guidance to improve their learning strategies and performance.</li>
+            <li>Promote student engagement and engagement: Students know that their progress data is being carefully looked at and analyzed, which increases their engagement and engagement with their learning. This active engagement creates a more dynamic and motivated learning environment that enhances the overall student experience.</li>
+            <li>Continuous improvement and optimization: Through the continuous collection of student progress data, the College can conduct long-term tracking and analysis to identify potential trends and patterns. This data-driven approach helps the college identify problems in a timely manner and take action to address them, continuously improving and optimizing the student learning experience.</li>
+        </ul>
+        <p>In summary, the collection of student progress data is important for improving academic quality, enhancing the student experience, and promoting student success. It provides the College with valuable information and tools to help students achieve their learning goals and build a strong foundation for their future development.</p>
+    </section>
+</body>
+</html>
