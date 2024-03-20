@@ -26,15 +26,15 @@
         <nav>
             <ul>
                 <!-- navigation link -->
-                <li><a href="{{ url_for('welcome') }}">welcome</a></li>
-                <li><a href="{{ url_for('information')}}">information</a></li>
-                <li><a href="{{ url_for('data_collection')}}">data_collection</a></li>
+                <li><a href="{{ url_for('home') }}">welcome</a></li>
+                <li><a href="{{ url_for('about')}}">information</a></li>
+                <li><a href="{{ url_for('questionnaire')}}">data_collection</a></li>
             </ul>
         </nav>
     </header>
-    <section class="data-collection">
-        <!--Data collection form-->
-        <h2>Student progress data collection</h2>
+    <section class="questionnaire">
+        <!--questionnaire form-->
+        <h2>Student Feedback Form</h2>
         <form method="POST">
             {{ form.hidden_tag() }}
             {{ form.name.label }} {{ form.name }}
