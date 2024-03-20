@@ -64,8 +64,8 @@ a:hover {
     color: #ccc; /*Set the color to light gray when hovering over the hyperlink*/
 }
 
-/*  Welcome page style*/
-.welcome {
+/*  home page style*/
+.home {
     background-color: rgba(0, 0, 0, 0.7); /*Set the welcome area background color and transparency*/
     border-radius: 10px; /*Set the border corners*/
     padding: 20px; /*The padding is 20 pixels*/
@@ -73,17 +73,17 @@ a:hover {
     max-width: 800px; /*The maximum width is 800 pixels*/
 }
 
-.welcome h2 {
+.home h2 {
     font-size: 24px; /*Set the title font size*/
 }
 
-.welcome p, .welcome ul, .welcome li {
+.home p, .home ul, .home li {
     font-size: 16px; /*Set paragraph and list font sizes*/
     line-height: 1.6; /*Set the line-height*/
 }
 
-/*Data-collection page style*/
-.data-collection {
+/*questionnaire page style*/
+.questionnaire {
     background-color: rgba(0, 0, 0, 0.7); /*Set the background color and transparency of the data collection area*/
     border-radius: 10px; /*Set the border corners*/
     padding: 20px; /*The padding is 20 pixels*/
@@ -91,7 +91,7 @@ a:hover {
     max-width: 800px; /*The maximum width is 800 pixels*/
 }
 
-.data-collection h2 {
+.questionnaire h2 {
     font-size: 24px; /*Set the title font size*/
 }
 
