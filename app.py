@@ -6,6 +6,7 @@ from wtforms.validators import DataRequired, Email, Length
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key_here'
 
+#Define a FlaskForm class for the form 
 class MyForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
     student_number = StringField('Student Number', validators=[DataRequired()])
@@ -21,14 +22,17 @@ class MyForm(FlaskForm):
     improvements = TextAreaField('Recommendations for Improvement')
     submit = SubmitField('Submit')
 
+#Define a route for the welcome page
 @app.route('/')
 def welcome():
     return render_template('welcome.html')
 
+#Define a route for the information page
 @app.route('/information')
 def information():
     return render_template('information.html')
 
+#Define a route for the data collection page
 @app.route('/data_collection', methods=['GET', 'POST'])
 def data_collection():
     form = MyForm()
@@ -41,7 +45,7 @@ def data_collection():
             f.write('Grades: {}\n'.format(form.grades.data))
             f.write('Satisfaction: {}\n'.format(form.satisfaction.data))
             f.write('Improvements: {}\n'.format(form.improvements.data))
-            f.write('\n')
+            f.write('\n') #Add a new line for the next entry
         success = True  # Set success to True after successful form submission
     return render_template('data_collection.html', form=form, success=success)
 
