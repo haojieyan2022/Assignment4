@@ -24,17 +24,17 @@ class MyForm(FlaskForm):
 
 #Define a route for the welcome page
 @app.route('/')
-def welcome():
-    return render_template('welcome.html')
+def home():
+    return render_template('home.html')
 
 #Define a route for the information page
-@app.route('/information')
-def information():
-    return render_template('information.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 #Define a route for the data collection page
-@app.route('/data_collection', methods=['GET', 'POST'])
-def data_collection():
+@app.route('/questionnaire', methods=['GET', 'POST'])
+def questionnaire():
     form = MyForm()
     success = False  # Set success to False by default
     if form.validate_on_submit():
@@ -47,7 +47,7 @@ def data_collection():
             f.write('Improvements: {}\n'.format(form.improvements.data))
             f.write('\n') #Add a new line for the next entry
         success = True  # Set success to True after successful form submission
-    return render_template('data_collection.html', form=form, success=success)
+    return render_template('questionnaire.html', form=form, success=success)
 
 if __name__ == '__main__':
     app.run(debug=True)
